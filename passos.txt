@@ -1,0 +1,79 @@
+
+---------------------------------------------------------------------------------------------
+Verifique a versão do python instalada (python 3.x.x)
+
+Atualize a versão do python caso seja necessário.
+
+Criar um ambiente virtual (python -m venv ./env)
+
+Ative o seu ambiente virtual (env/Scripts/Activate)
+
+Instalar o Django (pip install django)
+
+Verificar a versão do Django instalada (python -m django --version)
+
+Guardar as dependências(pip freeze > requirements.txt)
+
+---------------------------------------------------------------------------------------------
+
+Criar um projeto Django (django-admin startproject DjangoCRUD)
+
+Fazer as configurações do settings.py (arquivos estáticos e templates)
+
+Criação de um alicativo dentro do projeto Django (python manage.py startapp app1)
+    também pode ser (django-admin startapp app1)
+
+---------------------------------------------------------------------------------------------
+
+Criar app "python manage.py startapp app1"
+
+Configuramos as urls (projeto1 e app1)
+
+Criamos uma view (index)
+
+Criamos a pasta de templates
+
+---------------------------------------------------------------------------------------------
+
+Vamos criar nossos módulos
+
+Criar migrações do model User (python manage.py makemigrations)
+
+Aplicar as migrações (python manage.py migrate) 
+
+---------------------------------------------------------------------------------------------
+
+python shell (python manage.py shell) Verificação de criação de tabelas 
+
+Criar super usuário (python manage.py createsuperuser)
+
+registrar models no admin.py (app3)
+
+---------------------------------------------------------------------------------------------
+
+erro na inserção de dados:
+    mudar o campo no model de Integer para BitInteger
+    Criar migrações do model User (python manage.py makemigrations)
+    Aplicar as migrações (python manage.py migrate) 
+
+Criar templates html
+
+---------------------------------------------------------------------------------------------
+
+Criar formulário
+
+Testar formulário (Renderizamos ele com o metodo GET)
+
+Jinja (engine de template) -> Inserir código no template (ESTUDE UM POUCO DE JINJA)
+
+bootstrap (css pré-pronto) - (ESTUDE UM POUCO DE BOOTSTRAP)
+
+---------------------------------------------------------------------------------------------
+
+Criação de páginas dinâmicas com método POST
+
+Criação de páginas dinâmicas com query params
+
+---------------------------------------------------------------------------------------------
+
+Subir aplicação (python manage.py runserver)
