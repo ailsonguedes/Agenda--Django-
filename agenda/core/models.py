@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import datetime, timedelta
 
 # Create your models here.
 class Evento(models.Model):
@@ -22,3 +23,8 @@ class Evento(models.Model):
     def getDataInputEvento(self):
         return self.dataEvento.strftime('%Y-%m-%dT%H:%M')
     
+    def getEventoAtrasado(self):
+        if self.dataEvento < datetime.now():
+             return True
+        else:
+            return False
